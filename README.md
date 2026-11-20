@@ -1,2 +1,2 @@
-# effadors-calculator.github.io
+# Calculator
 My first ever web-site project I created myself. It's a basic calculator
