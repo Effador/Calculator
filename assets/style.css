@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #121212;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.calc{
+    width: 240px;
+    height: 360px;
+    background-color: rgb(160, 160, 160);
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+.calc > button{
+    font-size: 20px;
+}
+p{
+    font-size: 26px;
+    padding-right: 12px;
+}
+#n1{
+    grid-area: 3 / 1;
+}
+#n2{
+    grid-area: 3 / 2;
+}
+#n3{
+    grid-area: 3 / 3;
+}
+#n4{
+    grid-area: 4 / 1;
+}
+#n5{
+    grid-area: 4 / 2;
+}
+#n6{
+    grid-area: 4 / 3;
+}
+#n7{
+    grid-area: 5 / 1;
+}
+#n8{
+    grid-area: 5 / 2;
+}
+#n9{
+    grid-area: 5 / 3;
+}
+#n0{
+    grid-area: 6 / 2;
+}
+#plus{
+    grid-area: 3 / 4;
+}
+#minus{
+    grid-area: 4 / 4;
+}
+#multiply{
+    grid-area: 5 / 4;
+}
+#divide{
+    grid-area: 6 / 4;
+}
+#dot{
+    grid-area: 6 / 3;
+}
+#C{
+    grid-area: 6 / 1;
+}
+#sup{
+    grid-area: 2 / 1;
+}
+#root{
+    grid-area: 2 / 2;
+}
+#bs{
+    grid-area: 2 / 3;
+}
+#equals{
+    grid-area: 2 / 4;
+}
+.display{
+    display: flex;
+    grid-area: 1 / 1 / 2 / span 4;
+    background-color: #e5e5e5;
+    margin: 2px;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 0;
+}
